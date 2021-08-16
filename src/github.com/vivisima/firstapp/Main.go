@@ -5,24 +5,27 @@ import (
 )
 
 func main() {
+	a := 10 //1010
+	b := 3  //0011
+	fmt.Println(a + b)
+	fmt.Println(a - b)
+	fmt.Println(a * b)
+	fmt.Println(a / b)
+	fmt.Println(a % b)
+	fmt.Println(float32(a) / float32(b)) //type conversion
 
-	/* files, err := os.ReadDir(".")
-	if err != nil {
-		log.Fatal(err)
-	}
+	//bit operators
+	fmt.Println(a & b)  //0010
+	fmt.Println(a | b)  //1011
+	fmt.Println(a ^ b)  //1001
+	fmt.Println(a &^ b) //and not .. 0100
 
-	for _, file := range files {
-		fmt.Println(file.Name())
-	} */
-	//var i int
-	//i = 42
-	//var j int = 27
-	var l bool //all initialized variables have a 0 value
-	k := 99
-	fmt.Printf("%v, %T\n", k, k)
-	n := 1 == 1
-	m := 1 == 2
-	fmt.Printf("%v, %T\n", n, n)
-	fmt.Printf("%v, %T\n", m, m)
-	fmt.Printf("%v, %T\n", l, l)
+	//bit shifting
+	c := 8              //2^3
+	fmt.Println(c << 3) // 2^3 * 2^3 = 2^6  shift to the left
+	fmt.Println(c >> 3) // 2^3 / 2^3 = 2^0 shift to the right
+
+	// text types string: unicode8 char, runes
+	s := "this is a string"
+	fmt.Printf("%v, %T\n", s[2], s[2])
 }
