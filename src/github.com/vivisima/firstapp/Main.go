@@ -15,9 +15,9 @@ func main() {
 	fmt.Println(float32(a) / float32(b)) //type conversion
 
 	//bit operators
-	fmt.Println(a & b)  //0010
-	fmt.Println(a | b)  //1011
-	fmt.Println(a ^ b)  //1001
+	fmt.Println(a & b)  //0010 and
+	fmt.Println(a | b)  //1011 or
+	fmt.Println(a ^ b)  //1001 xor
 	fmt.Println(a &^ b) //and not .. 0100
 
 	//bit shifting
